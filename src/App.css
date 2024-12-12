@@ -1,0 +1,93 @@
+/* App.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Main container for two-column layout */
+.container {
+  display: flex; /* Horizontal layout (side-by-side) */
+  height: 100vh; /* Full height */
+  overflow: hidden; /* Prevent any overflow */
+}
+
+/* Content area on the left */
+.content {
+  flex: 1; /* Take available space */
+  padding: 20px;
+  max-width: 70%; /* Adjust based on how much space you want */
+  overflow-y: auto; /* Allow scrolling if content is too large */
+}
+
+/* Novelty container on the right */
+.novelty-container {
+  position: fixed; /* Keeps it in place while scrolling */
+  top: 100px;  /* Adjust based on header space */
+  right: 0; /* Fixed to the right side */
+  width: 30%; /* Adjust width as needed */
+  max-height: calc(100vh - 100px); /* Adjust height for remaining screen space */
+  padding: 20px;
+  overflow-y: auto; /* Allow scrolling within this container */
+}
+
+/* Styling for links */
+.link {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  background-color: #1d9bf0;
+  padding: 10px 20px;
+  border-radius: 30px;
+  color: white;
+  text-decoration: none;
+}
+
+.link:hover {
+  background-color: #0a78b9;
+}
+
+/* Title styles */
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Paragraph styling */
+.p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Styling for rounded buttons */
+.button {
+  border-radius: 20px;
+}
+
+/* River layout */
+.river {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Header section */
+.header {
+  flex: 1;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-right: 1px solid #ccc;
+}
+
+/* Sidebar section */
+.sidebar {
+  flex: 1;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-left: 1px solid #ccc;
+}
